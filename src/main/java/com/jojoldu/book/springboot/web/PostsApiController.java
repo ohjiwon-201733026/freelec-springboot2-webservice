@@ -17,7 +17,7 @@ public class PostsApiController {
     @PostMapping("/api/v1/posts")
     public Long save(@RequestBody PostsSaveRequestDto requestDto){
         return postsService.save(requestDto);
-    }
+    } //////왜 Long 리턴? void하면 안되나?
 
     // 수정 기능
     @PutMapping("/api/v1/posts/{id}")
