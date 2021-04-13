@@ -17,7 +17,6 @@ import javax.servlet.http.HttpSession;
 public class IndexController {
 
     private final PostsService postsService;
-    private final HttpSession httpSession;
 
     // 게시글 보기, index
     @GetMapping("/")
@@ -31,7 +30,10 @@ public class IndexController {
 
     //index->등록
     @GetMapping("/posts/save")
-    public String postsSave(){
+    public String postsSave(Model model, @LoginUser SessionUser user){
+        if(user!=null){
+            model.addAttribute("userName",user.getName());
+        }
         return "posts-save";
     }
 

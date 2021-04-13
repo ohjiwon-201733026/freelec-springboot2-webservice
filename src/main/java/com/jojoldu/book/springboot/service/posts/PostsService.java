@@ -1,6 +1,8 @@
 package com.jojoldu.book.springboot.service.posts;
 
 
+import com.jojoldu.book.springboot.config.auth.LoginUser;
+import com.jojoldu.book.springboot.config.auth.dto.SessionUser;
 import com.jojoldu.book.springboot.domain.posts.Posts;
 import com.jojoldu.book.springboot.domain.posts.PostsRepository;
 import com.jojoldu.book.springboot.web.dto.PostsListResponseDto;
