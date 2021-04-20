@@ -12,6 +12,7 @@ cache:
     - '$HOME/.m2/repository'
     - '$HOME/.gradle'
 
+#푸쉬 후 수행 명령어
 script: "./gradlew clean build"
 
 # CI 실행 완료시 메일로 알람
