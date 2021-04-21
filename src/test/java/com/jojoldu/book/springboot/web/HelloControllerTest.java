@@ -21,7 +21,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
             })
 public class HelloControllerTest {
 
-    @Autowired private MockMvc mvc;
+   /* @Autowired private MockMvc mvc;
 
     @WithMockUser(roles="USER")
     @Test
@@ -47,5 +47,5 @@ public class HelloControllerTest {
         .andExpect(jsonPath("$.name",is(name)))
         .andExpect(jsonPath("$.amount",is(amount)));
     }
-
+*/
 }

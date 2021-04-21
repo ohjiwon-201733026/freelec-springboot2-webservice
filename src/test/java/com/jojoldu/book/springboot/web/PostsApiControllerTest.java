@@ -33,7 +33,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest(webEnvironment=SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class PostsApiControllerTest {
 
-    @LocalServerPort
+   /* @LocalServerPort
     private int port;
 
     @Autowired
@@ -122,5 +122,5 @@ public class PostsApiControllerTest {
         List<Posts> all=postsRepository.findAll();
         assertThat(all.get(0).getTitle()).isEqualTo(expectedTitle);
         assertThat(all.get(0).getContent()).isEqualTo(expectedContent);
-    }
+    }*/
 }
