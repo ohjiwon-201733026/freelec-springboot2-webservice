@@ -14,14 +14,14 @@ import static org.hamcrest.Matchers.is;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-//@RunWith(SpringRunner.class)
-//@WebMvcTest(controllers=HelloController.class,
-//            excludeFilters={
-//        @ComponentScan.Filter(type= FilterType.ASSIGNABLE_TYPE,classes= SecurityConfig.class)
-//            })
+@RunWith(SpringRunner.class)
+@WebMvcTest(controllers=HelloController.class,
+            excludeFilters={
+        @ComponentScan.Filter(type= FilterType.ASSIGNABLE_TYPE,classes= SecurityConfig.class)
+            })
 public class HelloControllerTest {
 
-   /* @Autowired private MockMvc mvc;
+    @Autowired private MockMvc mvc;
 
     @WithMockUser(roles="USER")
     @Test
@@ -47,5 +47,5 @@ public class HelloControllerTest {
         .andExpect(jsonPath("$.name",is(name)))
         .andExpect(jsonPath("$.amount",is(amount)));
     }
-*/
+
 }
