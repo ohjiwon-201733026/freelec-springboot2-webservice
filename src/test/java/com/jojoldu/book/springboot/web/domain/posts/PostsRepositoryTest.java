@@ -3,6 +3,7 @@ package com.jojoldu.book.springboot.web.domain.posts;
 import com.jojoldu.book.springboot.domain.posts.Posts;
 import com.jojoldu.book.springboot.domain.posts.PostsRepository;
 import org.junit.After;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,10 +15,11 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-/*@RunWith(SpringRunner.class)
-@SpringBootTest*/
+@Ignore
+@RunWith(SpringRunner.class)
+@SpringBootTest
 public class PostsRepositoryTest {
-   /* @Autowired
+    @Autowired
     PostsRepository postsRepository;
 
     @After
@@ -62,5 +64,5 @@ public class PostsRepositoryTest {
 
         assertThat(posts.getCreatedDate()).isAfter(now);
         assertThat(posts.getModifiedDate()).isAfter(now);
-    }*/
+    }
 }

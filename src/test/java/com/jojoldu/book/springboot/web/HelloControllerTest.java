@@ -1,6 +1,7 @@
 package com.jojoldu.book.springboot.web;
 
 import com.jojoldu.book.springboot.config.auth.SecurityConfig;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,14 +15,15 @@ import static org.hamcrest.Matchers.is;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-/*@RunWith(SpringRunner.class)
+@Ignore
+@RunWith(SpringRunner.class)
 @WebMvcTest(controllers=HelloController.class,
             excludeFilters={
         @ComponentScan.Filter(type= FilterType.ASSIGNABLE_TYPE,classes= SecurityConfig.class)
-            })*/
+            })
 public class HelloControllerTest {
 
-   /* @Autowired private MockMvc mvc;
+    @Autowired private MockMvc mvc;
 
     @WithMockUser(roles="USER")
     @Test
@@ -46,6 +48,6 @@ public class HelloControllerTest {
         .andExpect(status().isOk())
         .andExpect(jsonPath("$.name",is(name)))
         .andExpect(jsonPath("$.amount",is(amount)));
-    }*/
+    }
 
 }

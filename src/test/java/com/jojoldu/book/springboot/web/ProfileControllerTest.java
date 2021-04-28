@@ -1,5 +1,6 @@
 package com.jojoldu.book.springboot.web;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,12 +12,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.assertj.core.api.Assertions.assertThat;
-
-/*@RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)*/
+@Ignore
+@RunWith(SpringRunner.class)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class ProfileControllerTest {
 
-  /*  @LocalServerPort
+    @LocalServerPort
     private int port;
 
     @Autowired
@@ -29,5 +30,5 @@ public class ProfileControllerTest {
         ResponseEntity<String> response = restTemplate.getForEntity("/profile", String.class);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
         assertThat(response.getBody()).isEqualTo(expected);
-    }*/
+    }
 }
