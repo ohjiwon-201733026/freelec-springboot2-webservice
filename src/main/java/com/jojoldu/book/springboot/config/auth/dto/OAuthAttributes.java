@@ -54,6 +54,7 @@ public class OAuthAttributes {
                 .build();
     }
 
+    // User 엔티티 생성(생성 시점: 처음 가입할 때)
     public User toEntity() {
         return User.builder()
                 .name(name)
