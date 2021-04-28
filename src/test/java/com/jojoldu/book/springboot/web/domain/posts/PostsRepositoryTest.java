@@ -47,7 +47,7 @@ public class PostsRepositoryTest {
 
     // 생성/수정 시간 자동화 테스트
     @Test
-    public void BasseTimeEntity_등록(){
+    public void BaseTimeEntity_등록(){
         //given
         LocalDateTime now= LocalDateTime.of(2019,6,4,0,0,0);
         postsRepository.save(Posts.builder()
