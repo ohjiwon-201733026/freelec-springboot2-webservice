@@ -1,9 +1,11 @@
 package com.jojoldu.book.springboot.web;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.mock.env.MockEnvironment;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+@Ignore
 public class ProfileControllerUnitTest {
 
     @Test
