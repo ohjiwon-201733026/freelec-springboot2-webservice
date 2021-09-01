@@ -17,9 +17,9 @@
 > + 프레임워크 : Spring Boot Gradle  
 > + DB : AWS RDS, MariaDB  
 > + 서버 : AWS EC2  
-> + 기타 : gitHub,TravisCI  
+> + 기타 : gitHub,TravisCI   
   
-    <br><br>
+<br><br>  
 ###상세 기능  
 > 1. 게시판 CRUD
 >     + 게시글 목록  
@@ -41,7 +41,7 @@
 >     + nginX로 무중단 배포   
 >     + 8081, 8082 포트 2개를 사용하여 서비스 중이 아닌 포트에 새 애플리케이션을 배포하고 포트를 전환시켜줌
 
+<br>
+<br>
 
-<br>
-<br>
 ![image](https://user-images.githubusercontent.com/62784947/131619998-3a2bfb6f-b2ed-4608-8f42-e1d9e71002ce.png)
