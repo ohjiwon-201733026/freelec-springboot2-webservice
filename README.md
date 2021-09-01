@@ -32,7 +32,6 @@
 >       MockMvc를 사용하여 post 메서드로 url에 전송하고 응답 상태가 200(success)인지 확인  
 >     + findAll test
 >     + 게시물 수정   
-<br>
 > 3. EC2 배포
 >     + TravisCI와 Github 연동  
 >     + 배포 전 jar 파일 등 배포에 필요한 파일들 압축하여 AWS S3 버킷으로 전달  
