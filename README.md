@@ -1,18 +1,18 @@
 # freelec-springboot2-webservice 
 
 
-###프로젝트 소개  
+1️⃣ 프로젝트 소개  
 > 게시판을 Spring Data JPA로 구현하고 테스트 코드를 Unit을 사용해 테스트 코드를 작성하였습니다. AWS EC2에 S3와 CodeDeploy를 사용해 애플리케이션을 배포하였습니다.
   
   <br><br>
-###주요 기능  
+2️⃣ 주요 기능  
 > + 게시판 CRUD
 > + JUnit으로 테스트 수행
 > + TravisCI로 통합, 테스트
 > + AWS EC2 서버에 배포   
   
   <br><br>
-###사용 기술  
+3️⃣사용 기술  
 > + 개발 언어 : Java, JavaScript  
 > + 프레임워크 : Spring Boot Gradle  
 > + DB : AWS RDS, MariaDB  
@@ -20,7 +20,7 @@
 > + 기타 : gitHub,TravisCI   
   
 <br><br>  
-###상세 기능  
+4️⃣ 상세 기능  
 > 1. 게시판 CRUD
 >     + 게시글 목록  
 >     + 게시글 등록  
